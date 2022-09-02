@@ -1,14 +1,14 @@
 <?php
 
-namespace Mahmoud\Files\Service;
+namespace Mahmoud147\Files\Service;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\UploadedFile;
 use Intervention\Image\Facades\Image;
-use Mahmoud\Files\Enum\AttributeEnum;
-use Mahmoud\Files\Enum\FolderEnum;
-use Mahmoud\Files\Enum\PrefixEnum;
-use Mahmoud\Files\Enum\PropertyEnum;
+use Mahmoud147\Files\Enum\AttributeEnum;
+use Mahmoud147\Files\Enum\FolderEnum;
+use Mahmoud147\Files\Enum\PrefixEnum;
+use Mahmoud147\Files\Enum\PropertyEnum;
 
 class Upload
 {

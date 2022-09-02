@@ -1,20 +1,20 @@
 <?php
 
-namespace Mahmoud\Files\Trait;
+namespace Mahmoud147\Files\Trait;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
-use Mahmoud\Files\Enum\AttributeEnum;
-use Mahmoud\Files\Enum\FolderEnum;
-use Mahmoud\Files\Enum\PropertyEnum;
-use Mahmoud\Files\Model\File;
-use Mahmoud\Files\Service\FileSystem;
-use Mahmoud\Files\Service\Path;
-use Mahmoud\Files\Service\Property;
-use Mahmoud\Files\Service\Upload;
+use Mahmoud147\Files\Enum\AttributeEnum;
+use Mahmoud147\Files\Enum\FolderEnum;
+use Mahmoud147\Files\Enum\PropertyEnum;
+use Mahmoud147\Files\Model\File;
+use Mahmoud147\Files\Service\FileSystem;
+use Mahmoud147\Files\Service\Path;
+use Mahmoud147\Files\Service\Property;
+use Mahmoud147\Files\Service\Upload;
 
 trait HasFiles
 {

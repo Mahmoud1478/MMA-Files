@@ -1,8 +1,8 @@
 <?php
 
-namespace Mahmoud\Files\Service;
+namespace Mahmoud147\Files\Service;
 
-use Mahmoud\Files\Enum\PropertyEnum;
+use Mahmoud147\Files\Enum\PropertyEnum;
 
 class Property
 {

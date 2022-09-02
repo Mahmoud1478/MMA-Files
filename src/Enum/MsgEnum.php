@@ -1,6 +1,6 @@
 <?php
 
-namespace Mahmoud\Files\Enum;
+namespace Mahmoud147\Files\Enum;
 
 enum MsgEnum : string implements BaseEnum
 {

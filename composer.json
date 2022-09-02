@@ -1,5 +1,5 @@
 {
-    "name": "mahmoud/files",
+    "name": "mahmoud1478/files",
     "description": "this package handel files in your app",
     "type": "library",
     "license": "MIT",
@@ -24,7 +24,7 @@
     "extra": {
         "laravel":{
             "providers":[
-                "Mahmoud\\Files\\MahmoudFilesServerProvider"
+                "Mahmoud147\\Files\\MahmoudFilesServerProvider"
             ]
 
         }

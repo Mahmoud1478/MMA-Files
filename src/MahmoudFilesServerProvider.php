@@ -1,11 +1,11 @@
 <?php
 
-namespace Mahmoud\Files;
+namespace Mahmoud147\Files;
 
 use Illuminate\Support\ServiceProvider;
 use Mahmoud\Files\Console\Commands\FilesDeleteCommand;
-use Mahmoud\Files\Console\Commands\filesInitCommand;
-use Mahmoud\Files\Console\Commands\filesOptimizeCommand;
+use Mahmoud147\Files\Console\Commands\filesInitCommand;
+use Mahmoud147\Files\Console\Commands\filesOptimizeCommand;
 
 class MahmoudFilesServerProvider extends ServiceProvider
 {

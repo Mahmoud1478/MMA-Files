@@ -1,11 +1,11 @@
 <?php
 
-namespace Mahmoud\Files\Console\Commands;
+namespace Mahmoud147\Files\Console\Commands;
 
 use Illuminate\Console\Command;
-use Mahmoud\Files\Service\FileSystem;
-use Mahmoud\Files\Service\Path;
-use Mahmoud\Files\Service\Shaper;
+use Mahmoud147\Files\Service\FileSystem;
+use Mahmoud147\Files\Service\Path;
+use Mahmoud147\Files\Service\Shaper;
 
 class FilesDeleteCommand extends Command
 {

@@ -1,9 +1,8 @@
 <?php
 
 
-namespace Mahmoud\Files\Model;
+namespace Mahmoud147\Files\Model;
 
-use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 
 class File extends Model

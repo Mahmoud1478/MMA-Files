@@ -1,6 +1,6 @@
 <?php
 
-namespace Mahmoud\Files\Service;
+namespace Mahmoud147\Files\Service;
 
 use Illuminate\Support\Facades\File;
 
