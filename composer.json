@@ -1,0 +1,32 @@
+{
+    "name": "mahmoud/files",
+    "description": "this package handel files in your app",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Mahmoud\\Files\\": "src/"
+        },
+        "files": [
+            "src/Helper/Helper.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "mahmoud1478",
+            "email": "mah.mostafa18@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "intervention/image": "^2.7"
+    },
+    "extra": {
+        "laravel":{
+            "providers":[
+                "Mahmoud\\Files\\MahmoudFilesServerProvider"
+            ]
+
+        }
+    }
+}
