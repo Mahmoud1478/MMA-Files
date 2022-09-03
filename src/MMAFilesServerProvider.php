@@ -1,20 +1,24 @@
 <?php
 
-namespace Mahmoud147\Files;
+namespace MMA\Files;
 
 use Illuminate\Support\ServiceProvider;
-use Mahmoud\Files\Console\Commands\FilesDeleteCommand;
-use Mahmoud147\Files\Console\Commands\filesInitCommand;
-use Mahmoud147\Files\Console\Commands\filesOptimizeCommand;
+use MMA\Files\Console\Commands\FilesDeleteCommand;
+use MMA\Files\Console\Commands\filesInitCommand;
+use MMA\Files\Console\Commands\filesOptimizeCommand;
 
 class MahmoudFilesServerProvider extends ServiceProvider
 {
+
+//    protected array $listen = [
+//
+//    ];
 
 
     public function boot(){
 
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
-
+        
     }
 
     public function register()
