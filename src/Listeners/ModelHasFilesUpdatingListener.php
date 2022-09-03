@@ -34,10 +34,10 @@ class ModelHasFilesUpdatingListener
     public function handle(ModelHasFilesUpdating $event): void
     {
         $attr = $event->model->{prop(AttributeEnum::File)}();
-        if ($event->model->attributes[$attr] !== $event->model->original[$attr]) {
-            Filesystem::deleteFiles(Path::getFileDiskPath($event->model::class,$event->model->original[$attr]));
+        if ($event->model->$attr !== $event->model->getOriginal($attr)) {
+            Filesystem::deleteFiles(Path::getFileDiskPath($event->model::class,$event->model->getOriginal($attr)));
             if(Property::get($event->model::class,prop(PropertyEnum::FileThumbActivate),false))
-            {Filesystem::deleteFiles(Path::getFileDiskPath($event->model::class,prop(FolderEnum::Thumb).DIRECTORY_SEPARATOR.$event->model->original[$attr]));}
+            {Filesystem::deleteFiles(Path::getFileDiskPath($event->model::class,prop(FolderEnum::Thumb).DIRECTORY_SEPARATOR.$event->model->getOriginal($attr)));}
             $event->model->{$attr} = Upload::file($event->model::class,$event->model->{$attr});
         }
     }
