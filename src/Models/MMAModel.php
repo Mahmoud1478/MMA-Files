@@ -1,6 +1,6 @@
 <?php
 
-namespace MMA\Files\Models;
+namespace MMAE\Files\Models;
 
 use Illuminate\Http\UploadedFile;
 

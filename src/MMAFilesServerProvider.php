@@ -1,12 +1,11 @@
 <?php
 
-namespace MMA\Files;
+namespace MMAE\Files;
 
 use Illuminate\Support\ServiceProvider;
-use MMA\Files\Console\Commands\FilesDeleteCommand;
-use MMA\Files\Console\Commands\filesInitCommand;
-use MMA\Files\Console\Commands\filesOptimizeCommand;
-use MMA\Files\MMAFilesEventServiceProvider;
+use MMAE\Files\Console\Commands\FilesDeleteCommand;
+use MMAE\Files\Console\Commands\filesInitCommand;
+use MMAE\Files\Console\Commands\filesOptimizeCommand;
 
 class MMAFilesServerProvider extends ServiceProvider
 {

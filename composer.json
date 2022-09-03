@@ -5,7 +5,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "MMA\\Files\\": "src/"
+            "MMAE\\Files\\": "src/"
         },
         "files": [
             "src/Helper/Helper.php"
@@ -24,7 +24,7 @@
     "extra": {
         "laravel":{
             "providers":[
-                "MMA\\Files\\MMAFilesServerProvider"
+                "MMAE\\Files\\MMAFilesServerProvider"
             ]
 
         }

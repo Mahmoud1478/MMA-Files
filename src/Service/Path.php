@@ -1,8 +1,8 @@
 <?php
 
-namespace MMA\Files\Service;
+namespace MMAE\Files\Service;
 
-use MMA\Files\Enum\FolderEnum;
+use MMAE\Files\Enum\FolderEnum;
 
 class Path
 {

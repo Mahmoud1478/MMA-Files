@@ -1,6 +1,6 @@
 <?php
 
-namespace MMA\Files\Enum;
+namespace MMAE\Files\Enum;
 
 interface BaseEnum
 {

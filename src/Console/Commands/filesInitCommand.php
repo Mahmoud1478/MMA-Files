@@ -1,14 +1,14 @@
 <?php
 
-namespace MMA\Files\Console\Commands;
+namespace MMAE\Files\Console\Commands;
 
 use Illuminate\Console\Command;
-use MMA\Files\Enum\FolderEnum;
-use MMA\Files\Enum\PropertyEnum;
-use MMA\Files\Service\FileSystem;
-use MMA\Files\Service\Path;
-use MMA\Files\Service\Property;
-use MMA\Files\Service\Shaper;
+use MMAE\Files\Enum\FolderEnum;
+use MMAE\Files\Enum\PropertyEnum;
+use MMAE\Files\Service\FileSystem;
+use MMAE\Files\Service\Path;
+use MMAE\Files\Service\Property;
+use MMAE\Files\Service\Shaper;
 
 class filesInitCommand extends Command
 {

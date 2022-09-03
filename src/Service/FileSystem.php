@@ -1,6 +1,6 @@
 <?php
 
-namespace MMA\Files\Service;
+namespace MMAE\Files\Service;
 
 use Illuminate\Support\Facades\File;
 

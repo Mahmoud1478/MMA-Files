@@ -1,10 +1,10 @@
 <?php
 
-namespace MMA\Files\Service;
+namespace MMAE\Files\Service;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\UploadedFile;
-use MMA\Files\Enum\MsgEnum;
+use MMAE\Files\Enum\MsgEnum;
 
 class Shaper
 {

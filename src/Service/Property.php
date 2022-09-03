@@ -1,8 +1,8 @@
 <?php
 
-namespace MMA\Files\Service;
+namespace MMAE\Files\Service;
 
-use MMA\Files\Enum\PropertyEnum;
+use MMAE\Files\Enum\PropertyEnum;
 
 class Property
 {

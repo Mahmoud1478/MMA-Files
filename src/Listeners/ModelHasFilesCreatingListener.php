@@ -1,12 +1,12 @@
 <?php
 
-namespace MMA\Files\Listeners;
+namespace MMAE\Files\Listeners;
 
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\InteractsWithQueue;
-use MMA\Files\Enum\AttributeEnum;
-use MMA\Files\Events\ModelHasFilesCreating;
-use MMA\Files\Service\Upload;
+use MMAE\Files\Enum\AttributeEnum;
+use MMAE\Files\Events\ModelHasFilesCreating;
+use MMAE\Files\Service\Upload;
 
 class ModelHasFilesCreatingListener
 {

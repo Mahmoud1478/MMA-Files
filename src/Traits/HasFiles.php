@@ -1,19 +1,19 @@
 <?php
 
-namespace MMA\Files\Traits;
+namespace MMAE\Files\Traits;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
-use MMA\Files\Enum\AttributeEnum;
-use MMA\Files\Enum\FolderEnum;
-use MMA\Files\Enum\PropertyEnum;
-use MMA\Files\Models\File;
-use MMA\Files\Service\FileSystem;
-use MMA\Files\Service\Path;
-use MMA\Files\Service\Property;
+use MMAE\Files\Enum\AttributeEnum;
+use MMAE\Files\Enum\FolderEnum;
+use MMAE\Files\Enum\PropertyEnum;
+use MMAE\Files\Models\File;
+use MMAE\Files\Service\FileSystem;
+use MMAE\Files\Service\Path;
+use MMAE\Files\Service\Property;
 
 trait HasFiles
 {

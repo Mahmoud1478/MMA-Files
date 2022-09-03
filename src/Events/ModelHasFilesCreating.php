@@ -1,6 +1,6 @@
 <?php
 
-namespace MMA\Files\Events;
+namespace MMAE\Files\Events;
 
 use Illuminate\Broadcasting\Channel;
 use Illuminate\Broadcasting\InteractsWithSockets;

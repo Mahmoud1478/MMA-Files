@@ -1,14 +1,14 @@
 <?php
 
-namespace MMA\Files\Listeners;
+namespace MMAE\Files\Listeners;
 
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\InteractsWithQueue;
-use MMA\Files\Enum\AttributeEnum;
-use MMA\Files\Enum\PropertyEnum;
-use MMA\Files\Events\ModelHasFilesSaved;
-use MMA\Files\Service\Property;
-use MMA\Files\Service\Upload;
+use MMAE\Files\Enum\AttributeEnum;
+use MMAE\Files\Enum\PropertyEnum;
+use MMAE\Files\Events\ModelHasFilesSaved;
+use MMAE\Files\Service\Property;
+use MMAE\Files\Service\Upload;
 
 class ModelHasFilesSavedListener
 {

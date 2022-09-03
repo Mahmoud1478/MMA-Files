@@ -1,11 +1,11 @@
 <?php
 
-namespace MMA\Files\Console\Commands;
+namespace MMAE\Files\Console\Commands;
 
 use Illuminate\Console\Command;
-use MMA\Files\Service\FileSystem;
-use MMA\Files\Service\Path;
-use MMA\Files\Service\Shaper;
+use MMAE\Files\Service\FileSystem;
+use MMAE\Files\Service\Path;
+use MMAE\Files\Service\Shaper;
 
 class FilesDeleteCommand extends Command
 {
