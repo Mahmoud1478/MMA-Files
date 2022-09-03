@@ -1,15 +1,15 @@
 <?php
 
-namespace Mahmoud147\Files\Console\Commands;
+namespace MMA\Files\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
-use Mahmoud147\Files\Enum\AttributeEnum;
-use Mahmoud147\Files\Enum\FolderEnum;
-use Mahmoud147\Files\Enum\PropertyEnum;
-use Mahmoud147\Files\Model\File;
-use Mahmoud147\Files\Service\FileSystem;
-use Mahmoud147\Files\Service\Path;
+use MMA\Files\Enum\AttributeEnum;
+use MMA\Files\Enum\FolderEnum;
+use MMA\Files\Enum\PropertyEnum;
+use MMA\Files\Model\File;
+use MMA\Files\Service\FileSystem;
+use MMA\Files\Service\Path;
 
 class filesOptimizeCommand extends Command
 {

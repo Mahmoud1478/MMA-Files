@@ -6,19 +6,16 @@ use Illuminate\Support\ServiceProvider;
 use MMA\Files\Console\Commands\FilesDeleteCommand;
 use MMA\Files\Console\Commands\filesInitCommand;
 use MMA\Files\Console\Commands\filesOptimizeCommand;
+use MMA\Files\MMAFilesEventServiceProvider;
 
-class MahmoudFilesServerProvider extends ServiceProvider
+class MMAFilesServerProvider extends ServiceProvider
 {
-
-//    protected array $listen = [
-//
-//    ];
 
 
     public function boot(){
 
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
-        
+
     }
 
     public function register()
@@ -31,6 +28,7 @@ class MahmoudFilesServerProvider extends ServiceProvider
             filesOptimizeCommand::class,
             FilesDeleteCommand::class,
         ]);
+        $this->app->register(MMAFilesEventServiceProvider::class);
     }
 
 }

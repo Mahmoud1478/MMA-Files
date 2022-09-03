@@ -1,6 +1,6 @@
 <?php
 
-use Mahmoud147\Files\Enum\BaseEnum;
+use MMA\Files\Enum\BaseEnum;
 
 if (!function_exists('propValue')){
 

@@ -1,14 +1,14 @@
 <?php
 
-namespace Mahmoud147\Files\Service;
+namespace MMA\Files\Service;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\UploadedFile;
 use Intervention\Image\Facades\Image;
-use Mahmoud147\Files\Enum\AttributeEnum;
-use Mahmoud147\Files\Enum\FolderEnum;
-use Mahmoud147\Files\Enum\PrefixEnum;
-use Mahmoud147\Files\Enum\PropertyEnum;
+use MMA\Files\Enum\AttributeEnum;
+use MMA\Files\Enum\FolderEnum;
+use MMA\Files\Enum\PrefixEnum;
+use MMA\Files\Enum\PropertyEnum;
 
 class Upload
 {
@@ -43,7 +43,7 @@ class Upload
     public static function file( string $model,UploadedFile $file): string
     {
         $fileName = time().$file->getClientOriginalName();
-        if (Property::IsFileWithoutProcess(__CLASS__)) {
+        if (Property::IsFileWithoutProcess($model)) {
             $file->move(Path::getFileDiskPath($model), $fileName);
             return $fileName;
         }

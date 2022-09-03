@@ -1,11 +1,11 @@
 {
-    "name": "mahmoud1478/files",
+    "name": "mma/files",
     "description": "this package handel files in your app",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Mahmoud\\Files\\": "src/"
+            "MMA\\Files\\": "src/"
         },
         "files": [
             "src/Helper/Helper.php"
@@ -24,7 +24,7 @@
     "extra": {
         "laravel":{
             "providers":[
-                "Mahmoud147\\Files\\MahmoudFilesServerProvider"
+                "MMA\\Files\\MMAFilesServerProvider"
             ]
 
         }

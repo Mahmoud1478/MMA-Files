@@ -1,6 +1,6 @@
 <?php
 
-namespace Mahmoud147\Files\Enum;
+namespace MMA\Files\Enum;
 
 enum PropertyEnum :string implements BaseEnum
 {

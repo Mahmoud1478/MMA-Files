@@ -1,7 +1,7 @@
 <?php
 
 
-namespace MMA\Files\Model;
+namespace MMA\Files\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

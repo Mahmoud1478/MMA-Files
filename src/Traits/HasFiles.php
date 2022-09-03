@@ -1,6 +1,6 @@
 <?php
 
-namespace MMA\Files\Trait;
+namespace MMA\Files\Traits;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
@@ -17,12 +17,6 @@ use MMA\Files\Service\Property;
 
 trait HasFiles
 {
-    public function scopeWithFileUrl(Builder $query)
-    {
-        $attr = prop(AttributeEnum::File)();
-        $query->addSelect(DB::raw('concat("' . Path::getFileUrl(__CLASS__) . '","/",' . $attr . ') as ' . $attr . '_url'));
-    }
-
 
     public static function getClassFolder(): string
     {
@@ -39,33 +33,11 @@ trait HasFiles
     {
         return 'files';
     }
-
-    public function files(): MorphMany
-    {
-        return $this->morphMany(File::class, 'model')
-            ->selectRaw('*,concat("' . Path::getFileUrl(__CLASS__,prop(FolderEnum::Media)) . '","/",folder,"/",name) as url')
-            ->when(Property::get(__CLASS__,prop(PropertyEnum::MediaThumbActivate), false) &&
-                Property::get(__CLASS__,prop(PropertyEnum::MediaIsImage),  false),
-                function (Builder $q) {
-                    $q->selectRaw('concat("' . Path::getFileUrl(__CLASS__,prop(FolderEnum::Media)) . '","/",folder,"/","thumb_",name) as thumb');
-                });
-    }
-
-
     public static function registerMediaColumns(int $index , UploadedFile $file): array
     {
         return [];
     }
 
-    public function deleteFiles(?array $ids , ?array $objects = null): static
-    {
-        if(Property::get(__CLASS__,prop(PropertyEnum::MediaActivate),false)){
-            if ($ids){$folders = $this->files()->pluck('folder');}else{$ids = [];$folders = $objects??[];}
-            foreach ($folders as $folder){
-                FileSystem::rmdir(Path::getFileDiskPath($this::class,prop(FolderEnum::Media).DIRECTORY_SEPARATOR.$folder));
-            }
-            if ($ids) $this->files()->whereIn('id' , $ids)->delete();
-        }
-        return $this;
-    }
+
+
 }
