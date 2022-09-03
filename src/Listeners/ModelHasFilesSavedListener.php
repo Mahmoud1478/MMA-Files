@@ -30,9 +30,14 @@ class ModelHasFilesSavedListener
      */
     public function handle(ModelHasFilesSaved $event): void
     {
-        $media =  request($event->model->{prop(AttributeEnum::RequestField)}());
-        if ($media && Property::get($event->model::class,prop(PropertyEnum::MediaActivate),false)) {
-           Upload::media($event->model,$media);
+        if(
+            request()->has($event->model->{prop(AttributeEnum::RequestField)}())
+            &&
+            Property::get($event->model::class,prop(PropertyEnum::MediaActivate),false)
+        ){
+            $media =  request($event->model->{prop(AttributeEnum::RequestField)}());
+            Upload::media($event->model,$media);
         }
+        
     }
 }
